@@ -9,6 +9,14 @@
                 left: 0%;
                 width: 100%;
             }
+            #footer {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                width: 100%;
+                height: 50px;
+                background-color: gray;
+            }
             #left-header {
                 position: absolute;
                 left: 0%;
@@ -17,28 +25,33 @@
                 position: absolute;
                 right: 0%;
             }
+            .links {
+                font-family: arial;
+            }
             #upper-links {
                 color: #000;
-                font-family: arial;
+                padding: 10px;
                 text-decoration: none;
+                font-size: 13px;
             }
             #lower-links {
-                color: #000;
-                font-family: arial;
+                color: #5f6368;
                 text-decoration: none;
-            }
-            .secundario {
-                color: gray;
+                padding: 10px;
             }
     </style>
   </head>
-  <body style="width: 100%; height: 100%;">
+  <body style="width: 100%; height: 100%; background-color: white;">
     <header id="header" class="secundario">
-        <div id="left-header"><p><a id="upper-links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a><span style="float : right;"><a id="upper-links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></span></p></div>
-        <div id="right-header"><p><a id="upper-links" href="https://mail.google.com/mail/&ogbl">Gmail</a><a id="upper-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a><span style="float : right;"><a id="upper-links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign in</a></span></p></div>
+        <div id="left-header"><p class="links"><a id="upper-links" style="position: relative; left: 10%;" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a><span style="float : right;"><a style="position: relative; left: 20%;" id="upper-links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></span></p></div>
+        <div id="right-header"><p class="links"><a id="upper-links" href="https://mail.google.com/mail/&ogbl">Gmail</a><a id="upper-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a><span style="float : right;"><a id="upper-links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign in</a></span></p></div>
     </header>
-    <div style="position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%);
+    <div style="position: absolute; width: 100%; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);"><img style="position: absolute; left: 50%;
     transform: translate(-50%);" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="El logotipo de Google."><p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p></body></div>
-  </body>
+  <footer id="footer" class="secundario">
+    <div id="left-header"><p class="links"><a id="lower-links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">Advertising</a><a id="lower-links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">Business</a><span style="float : right;"><a id="lower-links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">How Search Works</a></span></p></div>
+    <div id="right-header"><p class="links"><a id="lower-links" href="https://mail.google.com/mail/&ogbl">Privacy</a><a id="lower-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Terms</a><span style="float : right;"><a id="lower-links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Settings</a></span></p></div>
+</footer>
+</body>
 </html>
